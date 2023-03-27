@@ -1,0 +1,69 @@
+.container-fluid {
+  box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.col-1 .kategori {
+  color: gray;
+  border: none;
+}
+
+.col-2 .btn:hover {
+  background-color: white;
+}
+.col-1 .kategori:hover {
+  color: rgba(10, 170, 10, 0.856);
+  font-weight: 500;
+  background-color: gray;
+}
+
+.col-7 .list-group .list-group-item {
+  border: none;
+  margin-top: -10px;
+  padding-top: 1px;
+}
+
+.list-group-item a {
+  font-size: smaller;
+  text-decoration: none;
+  color: grey;
+}
+
+.list-group-item a:hover {
+  font-size: smaller;
+  text-decoration: none;
+  color: rgba(10, 170, 10, 0.856);
+  font-weight: 500;
+}
+
+/* .airlane .col a img:hover {
+  width: 140px;
+  transition: 1s;
+  box-shadow: 0 0px 3px 1px rgba(0, 0, 0, 0.1);
+} */
+
+.form-pesawat {
+  box-shadow: none;
+  border: 1px solid rgba(10, 170, 10, 0.856);
+}
+
+.airlane {
+  height: 90px;
+  width: 90px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  margin: 4px 7px;
+}
+
+.foot .btn:hover {
+  background-color: rgba(10, 170, 10, 0.856);
+  color: white;
+}

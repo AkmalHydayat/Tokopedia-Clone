@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2 - Tab Flight</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <a class="navbar-brand ps-2" href="#">
+            <img src="assets/img/tokopedia.png" alt="Tokopedia" width="140" />
+          </a>
+        </div>
+
+        <div class="col-8 pt-2">
+          <form class="d-flex" role="search">
+            <div class="col-sm-12">
+              <input
+                style="
+                  width: 800px;
+                  box-shadow: none;
+                  border: 1px solid rgba(10, 170, 10, 0.856);
+                "
+                type="search"
+                class="form-control form-control-sm"
+                id="colFormLabelSm"
+                placeholder="Cari Penerbangan"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="col-2 pt-2 ps-5">
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-success ms-2 me-1"
+            style="
+              font-weight: bold;
+              border: 1px solid rgba(10, 170, 10, 0.856);
+              color: rgba(10, 170, 10, 0.856);
+            "
+          >
+            Masuk
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm btn-success"
+            style="
+              font-weight: bold;
+              background-color: rgba(10, 170, 10, 0.856);
+              border: 1px solid rgba(10, 170, 10, 0.856);
+            "
+          >
+            Daftar
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-2 ms-2" style="font-size: larger; font-weight: bold">
+            Travel
+          </div>
+          <div class="col">
+            <div class="btn-group me-2">
+              <button
+                class="btn btn-secondary btn-sm dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="background-color: white; color: gray; border: none"
+              >
+                Tiket Pesawat
+              </button>
+              <ul class="dropdown-menu" style="font-size: smaller">
+                <li><a class="dropdown-item" href="#">Daftar Transaksi</a></li>
+                <li><a class="dropdown-item" href="#">Promo</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Bantuan</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Inspirasi Wisata</a></li>
+              </ul>
+            </div>
+            <div class="btn-group me-2">
+              <button
+                class="btn btn-secondary btn-sm dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="background-color: white; color: gray; border: none"
+              >
+                Tiket Kereta Api
+              </button>
+              <ul class="dropdown-menu" style="font-size: smaller">
+                <li><a class="dropdown-item" href="#">Daftar Transaksi</a></li>
+                <li><a class="dropdown-item" href="#">Promo</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Bantuan</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Inspirasi Wisata</a></li>
+              </ul>
+            </div>
+            <div class="btn-group me-2">
+              <button
+                class="btn btn-secondary btn-sm dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="background-color: white; color: gray; border: none"
+              >
+                Hotel
+              </button>
+              <ul class="dropdown-menu" style="font-size: smaller">
+                <li><a class="dropdown-item" href="#">Daftar Transaksi</a></li>
+                <li><a class="dropdown-item" href="#">Promo</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Bantuan</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Inspirasi Wisata</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div
+        class="card"
+        style="box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1); border: none"
+      >
+        <h4 class="text mt-4 ms-4" style="font-weight: bold">
+          Pesan tiket pesawat dengan harga murah di Tokopedia
+        </h4>
+        <div class="card-body row mb-4">
+          <div class="col-2">
+            <label
+              for="Asal"
+              class="form-label"
+              style="font-size: small; font-weight: bold; color: gray"
+              >Asal</label
+            >
+            <select
+              class="form-select form-select-sm form-pesawat"
+              aria-label=".form-select-sm example"
+              id="Asal"
+            >
+              <option selected>Asal</option>
+              <option value="1" style="font-weight: 600">Makassar</option>
+              <option value="2" style="font-weight: 600">Padang</option>
+              <option value="3" style="font-weight: 600">Semarang</option>
+              <option value="4" style="font-weight: 600">Pekan Baru</option>
+              <option value="5" style="font-weight: 600">Pangkal Pinang</option>
+              <option value="6" style="font-weight: 600">Jakarta</option>
+              <option value="7" style="font-weight: 600">Bali</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label
+              for="exampleFormControlInput1"
+              class="form-label"
+              style="font-size: small; font-weight: bold; color: gray"
+              >Tujuan</label
+            >
+            <select
+              class="form-select form-select-sm form-pesawat"
+              aria-label=".form-select-sm example"
+            >
+              <option selected>Tujuan</option>
+              <option value="1" style="font-weight: 600">Makassar</option>
+              <option value="2" style="font-weight: 600">Padang</option>
+              <option value="3" style="font-weight: 600">Semarang</option>
+              <option value="4" style="font-weight: 600">Pekan Baru</option>
+              <option value="5" style="font-weight: 600">Pangkal Pinang</option>
+              <option value="6" style="font-weight: 600">Jakarta</option>
+              <option value="7" style="font-weight: 600">Bali</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <label
+              for="exampleFormControlInput1"
+              class="form-label"
+              style="font-size: small; font-weight: bold; color: gray"
+              >Berangkat</label
+            >
+            <input
+              type="date"
+              class="form-control form-control-sm"
+              id="exampleFormControlInput1"
+              style="
+                border: 1px solid rgba(10, 170, 10, 0.856);
+                box-shadow: none;
+              "
+            />
+          </div>
+          <div class="col-2">
+            <label
+              for="exampleFormControlInput1"
+              class="form-label"
+              style="font-size: small; font-weight: bold; color: gray"
+              >Jumlah Penumpang</label
+            >
+            <select
+              class="form-select form-select-sm form-pesawat"
+              aria-label=".form-select-sm example"
+            >
+              <option selected></option>
+              <option value="1" style="font-weight: 600">1</option>
+              <option value="2" style="font-weight: 600">2</option>
+              <option value="3" style="font-weight: 600">3</option>
+              <option value="4" style="font-weight: 600">4</option>
+              <option value="5" style="font-weight: 600">5</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label
+              for="exampleFormControlInput1"
+              class="form-label"
+              style="font-size: small; font-weight: bold; color: gray"
+              >Kelas Penerbangan</label
+            >
+            <select
+              class="form-select form-select-sm form-pesawat"
+              aria-label=".form-select-sm example"
+            >
+              <option selected></option>
+              <option value="1" style="font-weight: 600">Ekonomi</option>
+              <option value="2" style="font-weight: 600">Bisnis</option>
+              <option value="3" style="font-weight: 600">Utama</option>
+            </select>
+          </div>
+          <div class="col-1">
+            <div class="row">
+              <div class="col">
+                <label for="exampleFormControlInput1" class="form-label">
+                  <br />
+                </label>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-success btn-sm"
+              style="
+                background-color: rgba(10, 170, 10, 0.856);
+                border: none;
+                color: white;
+              "
+            >
+              Cari
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4 mb-4">
+      <div
+        class="card"
+        style="box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1); border: none"
+      >
+        <h4 class="mt-4 mb-4" style="text-align: center; font-weight: bold">
+          Pilih Maskapai Penerbangan
+        </h4>
+        <div class="card-body mt-4">
+          <div class="mx-auto">
+            <div class="airlane">
+              <a href="#">
+                <img src="assets/img/lion.png" class="w-100 m-0" alt="..." />
+              </a>
+            </div>
+            <div class="airlane">
+              <a href="#">
+                <img
+                  src="assets/img/citilink.png"
+                  class="w-100 m-0"
+                  alt="..."
+                />
+              </a>
+            </div>
+            <div class="airlane">
+              <a href="#">
+                <img src="assets/img/batik.png" class="w-100 m-0" alt="..." />
+              </a>
+            </div>
+            <div class="airlane">
+              <a href="#">
+                <img src="assets/img/garuda.png" class="w-100 m-0" alt="..." />
+              </a>
+            </div>
+            <div class="airlane">
+              <a href="#">
+                <img
+                  src="assets/img/sriwijaya.png"
+                  class="w-100 m-0"
+                  alt="..."
+                />
+              </a>
+            </div>
+            <div class="airlane">
+              <a href="#">
+                <img src="assets/img/wings.png" class="w-100 m-0" alt="2.."
+              /></a>
+            </div>
+            <div class="airlane">
+              <a href="#">
+                <img src="assets/img/airasia.png" class="w-100 m-0" alt="..." />
+              </a>
+            </div>
+            <div class="airlane">
+              <a href="#">
+                <img src="assets/img/nam.png" class="w-100 m-0" alt="..." />
+              </a>
+            </div>
+            <div class="airlane">
+              <a href="#">
+                <img src="assets/img/xpress.png" class="w-100 m-0" alt="..." />
+              </a>
+            </div>
+            <div class="airlane">
+              <a href="#">
+                <img src="assets/img/scoot.png" class="w-100 m-0" alt="..." />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
